@@ -4,11 +4,11 @@ function renderFormUser(user) {
   elComment.value = user.comment
 }
 
-function renderUlComment(users) {
+function renderUlUsers(users) {
   const elUl = document.querySelector('#elListComments')
   elUl.innerHTML = ''
   for (const user of users) {
-    const elUserComment = generateUserComment(user)
+    const elUserComment = generateLiUser(user)
     elUl.appendChild(elUserComment)
   }
 }

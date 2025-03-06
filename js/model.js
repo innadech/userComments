@@ -1,27 +1,41 @@
+const users = []
 const user = {
   name: '',
   age: 0,
   comment: '',
 }
 
-function setName(name) {
+function setUserName(name) {
   user.name = name
 }
 
-function setAge(age) {
+function setUserAge(age) {
   user.age = age
 }
 
-function setComment(comment) {
+function setUserComment(comment) {
   user.comment = comment
 }
-const users = []
 
-function addUserComment(user) {
+function addUser(user) {
   if (!users.includes(user)) {
     return users.push(user)
   }
 }
+
+console.log(users)
+
+addUser(user)
+console.log(users)
+
+addUser(user)
+console.log(users)
+
+setUserName('name')
+setUserAge(33)
+setUserComment('comment')
+addUser(user)
+console.log(users)
 
 // function addListNickname() {
 //   if (!nicknames.includes(currentNickname)) {

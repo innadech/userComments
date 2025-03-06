@@ -1,4 +1,4 @@
-function generateUserComment(user) {
+function generateLiUser(user) {
   const elLi = document.createElement('li')
   const elDivBSpanI = document.createElement('div')
   const elB = document.createElement('b')

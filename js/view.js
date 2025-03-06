@@ -3,7 +3,8 @@ function onInputFormUser(e) {
   const userVal = e.target.value
   handleUpdateUser(userKey, userVal)
 }
-function onClickButtonAddComment() {
+
+function onClickButtonAddUser() {
   if ((elName.value !== '', elAge.value !== '', elComment.value !== '')) {
     const user = {
       name: elName.value,
@@ -21,6 +22,6 @@ function onClickButtonAddComment() {
 elName.oninput = onInputFormUser
 elAge.oninput = onInputFormUser
 elComment.oninput = onInputFormUser
-addButton.onclick = onClickButtonAddComment
+elButtonAdd.onclick = onClickButtonAddUser
 
 handeLoadPage()
