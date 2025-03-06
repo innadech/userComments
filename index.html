@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <h2>Comments</h2>
+
+      <div id="elFormUser" class="form-user">
+        <div class="wrap-input">
+          <label for="">Username:</label>
+          <input type="text" name="name" id="elName" />
+        </div>
+
+        <div class="wrap-input">
+          <label for="">Age:</label>
+          <input type="number" name="age" id="elAge" />
+        </div>
+
+        <div class="wrap-input">
+          <label for="">Comment:</label>
+          <textarea name="comment" id="elComment"></textarea>
+        </div>
+
+        <button id="addButton">Add</button>
+      </div>
+
+      <ul id="elListComments" class="list-comments">
+        <li class="elLi">
+          <div><b>qwe</b><span>,</span><i>21</i></div>
+          <div>
+            <span>Написал:</span>
+          </div>
+          <div>
+            <p>qwe</p>
+            <p class="elPData">15 марта 2025</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/model.js"></script>
+    <script src="./js/storage.js"></script>
+    <script src="./js/generator.js"></script>
+    <script src="./js/render.js"></script>
+    <script src="./js/controller.js"></script>
+    <script src="./js/view.js"></script>
+  </body>
+</html>
