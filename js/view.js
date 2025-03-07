@@ -5,14 +5,14 @@ function onInputFormUser(e) {
 }
 
 function onClickButtonAddUser() {
-  if ((elName.value !== '', elAge.value !== '', elComment.value !== '')) {
+  if (elName.value && elAge.value && elComment.value) {
     const user = {
       name: elName.value,
       age: +elAge.value,
       comment: elComment.value,
     }
-    console.log(user)
-    handleAddComment(user)
+
+    handleAddUser(user)
     elName.value = ''
     elAge.value = ''
     elComment.value = ''
