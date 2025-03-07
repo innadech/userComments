@@ -1,7 +1,7 @@
 function handleUpdateUser(userKey, userVal) {
-  if (userKey === 'name') setName(userVal)
-  if (userKey === 'age') setAge(+userVal)
-  if (userKey === 'comment') setComment(userVal)
+  if (userKey === 'name') setUserName(userVal)
+  if (userKey === 'age') setUserAge(+userVal)
+  if (userKey === 'comment') setUserComment(userVal)
   renderFormUser(user)
   saveUser(user)
   console.log(user)
@@ -13,7 +13,9 @@ function handeLoadPage() {
   // console.log(user)
 }
 function handleAddComment(user) {
-  addUserComment(user)
+  addUser(user)
   console.log(users)
-  renderUlComment(users)
+  renderUlUsers(users)
 }
+
+handeLoadPage()

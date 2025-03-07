@@ -23,5 +23,3 @@ elName.oninput = onInputFormUser
 elAge.oninput = onInputFormUser
 elComment.oninput = onInputFormUser
 elButtonAdd.onclick = onClickButtonAddUser
-
-handeLoadPage()
