@@ -8,10 +8,18 @@ function handleUpdateUser(userKey, userVal) {
 
 function handeLoadPage() {
   const user = restoreUser()
+  const name = user.name
+  const age = user.age
+  const comment = user.comment
+  console.log(name)
+  setUserName(name)
+  setUserAge(age)
+  setUserComment(comment)
   renderFormUser(user)
 }
 
 function handleAddUser(user) {
+  console.log(user)
   addUser(user)
   renderUlUsers(users)
 }
