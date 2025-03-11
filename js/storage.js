@@ -8,3 +8,12 @@ function restoreUser() {
   const user = JSON.parse(userJson)
   return user
 }
+function saveUsers() {
+  const stringifiedUsers = JSON.stringify(users)
+  localStorage.setItem('users', stringifiedUsers)
+}
+function restoreUsers() {
+  const usersJson = localStorage.getItem('users')
+  const users = JSON.parse(usersJson)
+  return users
+}

@@ -16,12 +16,16 @@ function handeLoadPage() {
   setUserAge(age)
   setUserComment(comment)
   renderFormUser(user)
+  const users = restoreUsers()
+  renderUlUsers(users)
 }
 
 function handleAddUser(user) {
   console.log(user)
   addUser(user)
   renderUlUsers(users)
+  user
+  saveUsers()
 }
 
 handeLoadPage()
